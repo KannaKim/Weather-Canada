@@ -1,0 +1,11 @@
+20211117
+
+adjust UI, add celsius -> ferenheight feature where all things change to ferenheight
+
+should be done within 3 days, if it goes over, you must be procrastinating
+
+20211120 
+
+UI adjusted, celsius -> fahrenheight feature added
+
+need to adjust few bugs and push it to github

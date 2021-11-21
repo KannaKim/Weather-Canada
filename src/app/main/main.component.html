@@ -1,0 +1,69 @@
+<article class = "main_wrapper">
+    <div>
+        <div class="current_weather_wrapper">
+            <div class="currentLoc_and_time">
+                <div id = "current_loc" [style.font-size]="current_loc_fontsize"><b>{{city}}, {{province}}</b></div>
+                <div id = "current_time_and_date">{{current_local_day}} {{current_local_hour_and_min}}</div>
+
+            </div>
+            <div class="currentWeather_and_Deg">
+                <img class = "currentWeather" src="http://openweathermap.org/img/wn/{{right_now_weather_icon}}@4x.png">
+                <div class = "currentDegrees">
+                    <div id="header_degree" [style.font-size]="header_degree_fontsize">{{current_temp}}<div class= "header_measurement">
+                            <span id="celsius" (click)="celsius_onclick()" [ngStyle]="{'color': (celsius_clicked) ? '#707070' : '#adadad'}">°C</span><span class="measurement_divide"> | </span><span id="fahrenheit" (click)="fahrenheit_onclick()" [ngStyle]="{'color': (fahrenheight_clicked==true) ? '#707070' : '#adadad'}">°F</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search_and_graph_wrapper">
+            <div class="searchBar_and_Images_wrapper">
+                <div class="searchBar_and_Images">
+                    <div class="searchIconWrapper">
+                        <i id = "currentSearchIcon" class="fa fa-search fa-2x"></i>
+                    </div>
+                    <input list="brow" (keydown.enter)=onEnter($event.target.value) (input)="onSearchChange($event.target.value)">
+                        <datalist id="brow">
+                            <option *ngFor="let el of searchList_elemets">{{el}}</option>
+                        </datalist>  
+                </div>
+            </div>
+            <div class="graph_wrapper">
+                <ngx-charts-line-chart
+                    [view]="view"
+                    [showXAxisLabel]="showXAxisLabel"
+                    [showYAxisLabel]="showYAxisLabel"
+                    [xAxis]="xAxis"
+                    [yAxis]="yAxis"
+                    [xAxisLabel]="xAxisLabel"
+                    [yAxisLabel]="yAxisLabel"
+                    [timeline]="timeline"
+                    [results]="multi"
+                    >
+                </ngx-charts-line-chart>
+            </div>
+        </div>
+    </div>
+    <div class="weather_per_day_wrapper">
+        <div class="weather_per_day" *ngFor="let t_h of fd_averaged_temp_high; let i = index">
+            <div class="Day_and_Image_wrapper">
+                <div class="Day_wrapper">
+                    {{fd_day_list[i]}}
+                </div>
+                <div class="image_wrapper">
+                    <img src="http://openweathermap.org/img/wn/{{fd_averaged_weather_icon[i]}}@4x.png">
+                </div>
+            </div>
+            <div class="weather_per_day_high">
+                <div id="dailly_degree">{{fd_averaged_temp_high[i]}}</div>
+                <span id="dailly_measurement">{{celsius_clicked===true ? "°C":"°F"}}</span>
+            </div>
+            <div class="weather_per_day_low">
+                <div id="dailly_degree">{{fd_averaged_temp_low[i]}}</div>
+                <span id="dailly_measurement">{{celsius_clicked===true ? "°C":"°F"}}</span>
+            </div>
+        </div>
+        
+    </div>
+    
+</article>

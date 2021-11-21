@@ -1,0 +1,161 @@
+.degree_measure{
+    vertical-align: top;
+}
+.degree_number{
+    vertical-align: top;
+    font-size: 50px;
+}
+.main_wrapper{
+    width:1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.weather_per_day_wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+.weather_per_day{
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+.Day_wrapper{
+    text-align: center;
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.weather_per_day_high{
+    color: #272727;
+    text-align: center;
+}
+.weather_per_day_low{
+    color: #707070;
+    text-align: center;
+}
+#dailly_degree{
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: inherit;
+}
+#dailly_measurement{
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: inherit;
+}
+.weather_per_day span{
+    font-size: 20px;
+}
+#current_loc{
+    /* font-size: 56px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+    text-align: center;
+}
+#current_time_and_date{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #888888;
+    text-align: center;
+}
+.currentWeather_and_Deg{
+    margin-top: 50px;
+}
+.currentWeather{
+    display: inline-block;
+
+}
+.currentDegrees{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+#currentSearchIcon{
+    color: #707070;
+}
+.search_and_graph_wrapper{
+    display: inline-block;
+    position: relative;
+    margin-left: 140px;
+    width: 550px;
+    vertical-align: top;
+}
+.currnetWeather_and_Deg img{
+    width: 270px;
+}
+.current_weather_wrapper{
+    display: inline-block;
+    /* width: 400px;
+    overflow: scroll; */
+}
+.graph_wrapper{
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    border-color: #888888;
+}
+.searchBar_and_Images img{
+    width: 76px;
+    cursor: pointer;
+    display: flex;
+}
+.image_wrapper img{
+    margin: 0 auto;
+    width: 100px;
+}
+.searchBar_and_Images_wrapper{
+    width: 350px;
+    /* height: 65px; */
+    background-color: white;
+    margin: 0px 0px 50px 150px;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: white;
+    border-color: #888888;
+
+}
+.searchBar_and_Images{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    height: 100%;
+}
+.searchIconWrapper{
+    padding: 10px 20px 10px 10px;
+}
+.searchBar_and_Images input{
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+}
+
+.header_measurement{
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    vertical-align: text-top;
+    color: #707070;
+    cursor: pointer;
+}
+#header_degree{
+    font-size: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+    display: inline-block;
+}
+#celsius{
+
+}
+.measurement_divide{
+    color: #adadad;
+}
