@@ -1,7 +1,6 @@
-you can see 5 days weather forecasts, current temperature, past temperature all across the Canada 
-
-
 # WeatherCanada
+
+you can see 5 days weather forecasts, current temperature, past temperature all across the Canada 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
