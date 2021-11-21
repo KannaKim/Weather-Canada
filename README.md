@@ -2,6 +2,9 @@
 
 you can see 5 days weather forecasts, current temperature, past temperature all across the Canada 
 
+[Website Overview]("https://imgur.com/OkWE2EQ.gif")
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
 ## Development server
