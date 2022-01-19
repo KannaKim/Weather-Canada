@@ -5,8 +5,8 @@ Type out any region and I mean __any region__ in this app, it's gonna work.
 
 This app was made with Angular / nodejs / expressjs 
 
-
+### Website Preview 
 <img src="https://imgur.com/PxWzrrM.jpg">
 
-Website Overview: https://imgur.com/OkWE2EQ.gif
+Full Overview: https://imgur.com/OkWE2EQ.gif
 
